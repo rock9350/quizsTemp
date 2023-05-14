@@ -1,38 +1,74 @@
-.App {
+/* CSS */
+.button-28 {
+  background-color: transparent;
+  border: 3px solid yellow;
+  border-radius: 15px;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
   text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  width: 100%;
+  will-change: transform;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-28:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App {
+  border: 15px solid pink;
   display: flex;
+  padding: 5% 10% 5% 10%;
+  width: 30%;
+  margin: 7% auto;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 10px;
+}
+.optionBox {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 5%;
+  grid-row-gap: 50px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 550px) {
+  .App {
+    border: 10px solid pink;
+    width: 50%;
+    margin: 40% auto;
+    border-radius: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .optionName {
+    font-size: 10px;
+    font-size: 15px;
+  }
+  .optionBox {
+    display: inline;
+  }
+  .optionInput {
+    border: 1px solid pink;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px auto;
+  }
+  .questionTitle{
+    font-size: 1.5rem;
+  }
+  .scoreBox{
+    font-size: 1.2rem;
   }
 }
